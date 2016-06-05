@@ -1,0 +1,13 @@
+>>116188406
+The architecture is a mess and makes me want to cry.
+
+Basically, each Tile object has a few things:
+>tileID - tiles with the same tileID autotile together
+>palette x and y position - what part of the source tileset graphic they draw fromt
+>8 booleans i've been thinking of as "adjacencies", determining whether the tile should autotile to the north, northwest, west, southwest, etc. all the way around. Whenever a tile is placed, it calculates its own adjacencies and orders all adjacent tiles to also recalculate. I'm planning to have it skip recalculation if you hold shift, so that you can override the normal functionality.
+
+To do the tile drawing, you split the tile into 4 subtiles. For example, the top left subtile checks the adjacencies to the west, northwest, and north, to decide how it should be drawn.
+
+Actually doing the drawing is based on checking which adjacency combination the subtile has, and deciding what to draw given those adjacencies. Right now it's a mass of 175 lines of if-statements, and I plan to looking into a better way of doing it. http://pastebin.com/JQiGNrpT
+
+The xoff and yoff variables are offsets in the tileset image. For instance, when drawing the bottom left corner of the autotile, you would use xoff = 1, yoff = 4 to indicate that you need horizontal shoreline (pic related is the tileset from the video).
