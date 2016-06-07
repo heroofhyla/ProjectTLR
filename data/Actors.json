@@ -1,7 +1,8 @@
 [
 null,
 {"id":1,"battlerName":"Actor2_1","characterIndex":0,"characterName":"Actor2","classId":6,"equips":[1,1,2,3,0],"faceIndex":0,"faceName":"Actor2","traits":[],"initialLevel":1,"maxLevel":99,"name":"Treskel","nickname":"","note":"","profile":""},
-{"id":2,"battlerName":"Actor1_4","characterIndex":3,"characterName":"Actor1","classId":2,"equips":[2,1,6,5,0],"faceIndex":3,"faceName":"Actor1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Lana","nickname":"","note":"","profile":"\"If we're careful, we should make it through the\nforest unharmed.\""},
-{"id":3,"battlerName":"mezatrixbattler","characterIndex":1,"characterName":"newcharas1","classId":3,"equips":[3,0,2,3,4],"faceIndex":1,"faceName":"customfaces1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Mezatrix","nickname":"","note":"","profile":"\"This forest looks scary. I hope Lana knows what\nshe's doing.\""},
-{"id":4,"battlerName":"sabasbattler","characterIndex":0,"characterName":"newcharas1","classId":4,"equips":[4,0,2,3,4],"faceIndex":0,"faceName":"customfaces1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Sabas","nickname":"","note":"","profile":"\"Spirits, grant me the strength to complete my quest.\""}
+{"id":2,"battlerName":"lanabattler","characterIndex":2,"characterName":"newcharas1","classId":2,"equips":[2,1,0,5,0],"faceIndex":2,"faceName":"customfaces1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Lana","nickname":"","note":"","profile":"\"Trust no one, not even yourself.\""},
+{"id":3,"battlerName":"mezatrixbattler","characterIndex":1,"characterName":"newcharas1","classId":3,"equips":[3,0,0,3,0],"faceIndex":1,"faceName":"customfaces1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Mezatrix","nickname":"","note":"","profile":"\"Stay out of my way.\""},
+{"id":4,"battlerName":"sabasbattler","characterIndex":0,"characterName":"newcharas1","classId":4,"equips":[4,0,0,3,0],"faceIndex":0,"faceName":"customfaces1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Sabas","nickname":"","note":"","profile":"\"I've got a bad feeling about this.\""},
+{"id":5,"battlerName":"taggartbattler","characterIndex":3,"characterName":"newcharas1","classId":2,"equips":[2,1,0,5,0],"faceIndex":3,"faceName":"customfaces1","traits":[],"initialLevel":1,"maxLevel":99,"name":"Taggart","nickname":"","note":"","profile":"\"Let's go.\""}
 ]
