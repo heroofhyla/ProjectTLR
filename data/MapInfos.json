@@ -27,5 +27,5 @@ null,
 {"id":25,"expanded":false,"name":"Inn F2","order":20,"parentId":24,"scrollX":819,"scrollY":461},
 {"id":26,"expanded":false,"name":"Items","order":21,"parentId":22,"scrollX":832,"scrollY":640},
 {"id":27,"expanded":true,"name":"Hunter's Wood - OLD","order":28,"parentId":8,"scrollX":2808,"scrollY":1580.5714285714284},
-{"id":28,"expanded":false,"name":"Hunter's Wood","order":22,"parentId":4,"scrollX":809,"scrollY":989.5}
+{"id":28,"expanded":false,"name":"Hunter's Wood","order":22,"parentId":4,"scrollX":809,"scrollY":447.5}
 ]
