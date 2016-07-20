@@ -1,6 +1,6 @@
 [
 null,
-{"id":1,"list":[{"code":101,"indent":0,"parameters":["People4",7,0,2]},{"code":401,"indent":0,"parameters":["Stealing isn't implemented yet, dummy!"]},{"code":0,"indent":0,"parameters":[]}],"name":"Steal","switchId":1,"trigger":0},
+{"id":1,"list":[{"code":122,"indent":0,"parameters":[16,16,0,2,200,600]},{"code":101,"indent":0,"parameters":["",7,0,2]},{"code":401,"indent":0,"parameters":["Stole \\V[16] \\G!"]},{"code":0,"indent":0,"parameters":[]}],"name":"Steal","switchId":1,"trigger":0},
 {"id":2,"list":[{"code":356,"indent":0,"parameters":["ItemBook open"]},{"code":0,"indent":0,"parameters":[]}],"name":"Catalog","switchId":1,"trigger":0},
 {"id":3,"list":[{"code":356,"indent":0,"parameters":["EnemyBook open"]},{"code":0,"indent":0,"parameters":[]}],"name":"Bestiary","switchId":1,"trigger":0},
 {"id":4,"list":[{"code":101,"indent":0,"parameters":["",0,0,2]},{"code":401,"indent":0,"parameters":["Current target: \\v[6]"]},{"code":0,"indent":0,"parameters":[]}],"name":"Print Target","switchId":1,"trigger":0},
