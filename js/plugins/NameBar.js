@@ -2,6 +2,9 @@
  * @plugindesc Adds a nameplate above message boxes.
  * @author Michael Stroud
  * 
+ * @param variable	
+ * @desc The variable which holds the current name to display
+ * @default 1
  * No warranty, express or implied. I can't guarantee that it will
  * work at all. If it's useful to you, credit is appreciated.
  * You may redistribute, but do not remove any of the above.
@@ -13,24 +16,13 @@
  * Use \~ in a message box to make the nameplate appear.
  * Right now the position of the nameplate is hardcoded. This might change.
  * Plugin Command:
- * NameBar set Arshes		#Set the nameplate to display "Arshes"
+ * NameBar set 3		#Set the nameplate to display the name of the third
+ *                       in the database
 */
 (function(){
-	currentName = "Your Name Here";
-	
-	var _Game_Interpreter_prototype_pluginCommand = Game_Interpreter.prototype.pluginCommand;
-	Game_Interpreter.prototype.pluginCommand = function(command, args){
-		_Game_Interpreter_prototype_pluginCommand.call(this, command, args);
-		if (command === 'NameBar'){
-			switch (args[0]){
-				case 'set':
-				currentName = args[1];
-				break;
-			}
-		}
-	};
-	
-	//all this stuff is copied from Window_Gold
+	var parameters = PluginManager.parameters('NameBar');
+    var nameVar = Number(parameters['variable'] || 1);
+	//all this stuff is adapted from Window_Gold
 	function Window_Name() {
 		this.initialize.apply(this, arguments);
 	}
@@ -57,7 +49,11 @@
 		var x = this.textPadding();
 		var width = this.contents.width - this.textPadding() * 2;
 		this.contents.clear();
-		this.drawText(currentName, x, 0, width, 'left');
+		//this.drawText($gameVariables.value(nameVar), x, 0, width, 'left');
+		var nameString = String($gameVariables.value(nameVar));
+		//nameString = Window_Base.prototype.convertEscapeCharacters.call(this, nameString);
+		nameString = this.convertEscapeCharacters(nameString);
+		this.drawText(nameString, x, 0, width, 'left');
 	};
 
 	Window_Name.prototype.value = function() {
