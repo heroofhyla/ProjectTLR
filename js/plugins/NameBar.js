@@ -15,9 +15,14 @@
  *
  * Use \~ in a message box to make the nameplate appear.
  * Right now the position of the nameplate is hardcoded. This might change.
- * Plugin Command:
- * NameBar set 3		#Set the nameplate to display the name of the third
- *                       in the database
+ * 
+ * To control which name is displayed:
+ * 
+ * Set the assigned variable to use the "script" option, and enter the
+ * name of the character IN QUOTES.
+ * To use a character name from the database, use "\\n[3]" for example
+ * (including the quotes and both backslashes) to display the name of the
+ * third character in the database.
 */
 (function(){
 	var parameters = PluginManager.parameters('NameBar');
@@ -49,9 +54,7 @@
 		var x = this.textPadding();
 		var width = this.contents.width - this.textPadding() * 2;
 		this.contents.clear();
-		//this.drawText($gameVariables.value(nameVar), x, 0, width, 'left');
 		var nameString = String($gameVariables.value(nameVar));
-		//nameString = Window_Base.prototype.convertEscapeCharacters.call(this, nameString);
 		nameString = this.convertEscapeCharacters(nameString);
 		this.drawText(nameString, x, 0, width, 'left');
 	};
