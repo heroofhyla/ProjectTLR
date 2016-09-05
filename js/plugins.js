@@ -6,5 +6,6 @@ var $plugins =
 {"name":"EnemyBook","status":true,"description":"Displays detailed statuses of enemies.","parameters":{"Unknown Data":"??????"}},
 {"name":"SimpleMsgSideView","status":true,"description":"at sideview battle, only display item/skill names.","parameters":{"displayAttack":"0","position":"1"}},
 {"name":"CurrentTargetToVariable","status":true,"description":"Stores the current target's id in a designated variable","parameters":{"variableNumber":"6"}},
-{"name":"NameBar","status":true,"description":"Adds a nameplate above message boxes.","parameters":{"variable":"34"}}
+{"name":"NameBar","status":true,"description":"Adds a nameplate above message boxes.","parameters":{"variable":"34"}},
+{"name":"NoEnemyListing","status":true,"description":"Suppresses the enemies list that appears pre-battle","parameters":{}}
 ];
