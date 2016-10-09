@@ -26,9 +26,9 @@
 		for (var i = 1; i <= accessoryCount; i++){
 			slots.push(accessorySlot)
 		}
-		if (slots.length >= 3 && this.isDualWield()) {
+		/*if (slots.length >= 3 && this.isDualWield()) {
 			slots[1] = 1;
-		}
+		}*/
 		return slots;
 	};
 })();

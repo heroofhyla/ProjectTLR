@@ -8,6 +8,7 @@ var $plugins =
 {"name":"CurrentTargetToVariable","status":true,"description":"Stores the current target's id in a designated variable","parameters":{"variableNumber":"6"}},
 {"name":"NameBar","status":true,"description":"Adds a nameplate above message boxes.","parameters":{"variable":"34"}},
 {"name":"NoEnemyListing","status":true,"description":"Suppresses the enemies list that appears pre-battle","parameters":{}},
-{"name":"skillsOnlyBattleWindow","status":true,"description":"Shows only a listing of all an actor's skills in the\r\nactor command window","parameters":{}},
-{"name":"ManyAccessories","status":true,"description":"Equip more than one accessory","parameters":{"accessoryCount":"2"}}
+{"name":"skillsOnlyBattleWindow","status":true,"description":"Shows only a listing of all an actor's skills in the\r\nactor command window","parameters":{"showAttackCommand":"1"}},
+{"name":"ManyAccessories","status":true,"description":"Equip more than one accessory","parameters":{"accessoryCount":"3"}},
+{"name":"RenameAttackPerWeapon","status":true,"description":"Weapons can rename the Attack skill","parameters":{}}
 ];

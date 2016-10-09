@@ -1,7 +1,9 @@
 /*:
  * @plugindesc Shows only a listing of all an actor's skills in the
  * actor command window
- 
+ * @param showAttackCommand
+ * @desc if "1" and if the attack skill is not sealed, show the standard "attack" command 
+ * @default 0
  * @author Michael Stroud
  * 
  * No warranty, express or implied. I can't guarantee that it will
@@ -16,6 +18,9 @@
  */
 
 (function(){
+	var parameters = PluginManager.parameters('skillsOnlyBattleWindow');
+    var showAttackCommand = Number(parameters['showAttackCommand'] || 0);
+	
 	Window_ActorCommand.prototype.makeCommandList = function() {
 		if (this._actor) {
 			this.addEachSkillCommand();
@@ -24,8 +29,8 @@
 	
 	Window_ActorCommand.prototype.addEachSkillCommand = function() {
 		var skills = this._actor.usableSkills();
-		if (skills.length == 0){
-			this.addAttackCommand();;
+		if (skills.length == 0 || (showAttackCommand && !this._actor.isSkillSealed(1))){
+			this.addAttackCommand();
 		}
 		skills.forEach(function(skill) {
 			var name = skill.name;
