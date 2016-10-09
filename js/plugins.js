@@ -7,5 +7,7 @@ var $plugins =
 {"name":"SimpleMsgSideView","status":true,"description":"at sideview battle, only display item/skill names.","parameters":{"displayAttack":"0","position":"1"}},
 {"name":"CurrentTargetToVariable","status":true,"description":"Stores the current target's id in a designated variable","parameters":{"variableNumber":"6"}},
 {"name":"NameBar","status":true,"description":"Adds a nameplate above message boxes.","parameters":{"variable":"34"}},
-{"name":"NoEnemyListing","status":true,"description":"Suppresses the enemies list that appears pre-battle","parameters":{}}
+{"name":"NoEnemyListing","status":true,"description":"Suppresses the enemies list that appears pre-battle","parameters":{}},
+{"name":"skillsOnlyBattleWindow","status":true,"description":"Shows only a listing of all an actor's skills in the\r\nactor command window","parameters":{}},
+{"name":"OneAndFourEquipSlots","status":true,"description":"Changes equip slots so each actor can equip 1 of one slot type and several of another","parameters":{"primarySlotID":"1","otherSlotID":"6","slotCount":"5"}}
 ];
