@@ -24,6 +24,9 @@
 	
 	Window_ActorCommand.prototype.addEachSkillCommand = function() {
 		var skills = this._actor.usableSkills();
+		if (skills.length == 0){
+			this.addAttackCommand();;
+		}
 		skills.forEach(function(skill) {
 			var name = skill.name;
 			this.addCommand(name, 'singleSkill', true, skill);
@@ -42,6 +45,8 @@
 		this._actorCommandWindow = new Window_ActorCommand();
 		this._actorCommandWindow.setHandler('cancel', this.selectPreviousCommand.bind(this));
 		this._actorCommandWindow.setHandler('singleSkill', this.commandSingleSkill.bind(this));
+		this._actorCommandWindow.setHandler('attack', this.commandAttack.bind(this));
 		this.addWindow(this._actorCommandWindow);
 	};
 })();
+
