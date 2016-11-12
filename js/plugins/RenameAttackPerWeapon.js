@@ -16,6 +16,7 @@
 			this.addCommand(TextManager.attack, 'attack', this._actor.canAttack());
 		}else{
 			var skillName = this._actor.weapons()[0].meta.attackName;
+			console.log(this._actor.weapons()[0].params[2]);
 			this.addCommand(skillName?skillName:TextManager.attack, 'attack', this._actor.canAttack());
 		}
 	};
