@@ -9,5 +9,8 @@ null,
 {"id":7,"atypeId":7,"description":"Keeps hair out of eyes for a slightly better critical \nhit rate.","etypeId":3,"traits":[{"code":22,"dataId":2,"value":0.1}],"iconIndex":150,"name":"Bandana","note":"","params":[0,0,0,0,0,0,0,0],"price":250},
 {"id":8,"atypeId":7,"description":"Find extra gold after battles","etypeId":3,"traits":[{"code":64,"dataId":4,"value":1}],"iconIndex":314,"name":"Lucky Coin","note":"","params":[0,0,0,0,0,0,0,0],"price":1000},
 {"id":9,"atypeId":7,"description":"Slowly regenerate health","etypeId":3,"traits":[{"code":22,"dataId":7,"value":0.01}],"iconIndex":299,"name":"Health Charm","note":"","params":[0,0,0,0,0,0,0,0],"price":500},
-{"id":10,"atypeId":7,"description":"Cannot be surprised in battle.","etypeId":3,"traits":[{"code":64,"dataId":2,"value":1}],"iconIndex":205,"name":"Glass Bell","note":"","params":[0,0,0,0,0,0,0,0],"price":250}
+{"id":10,"atypeId":7,"description":"Cannot be surprised in battle.","etypeId":3,"traits":[{"code":64,"dataId":2,"value":1}],"iconIndex":205,"name":"Glass Bell","note":"","params":[0,0,0,0,0,0,0,0],"price":250},
+{"id":11,"atypeId":7,"description":"Someone thought this was a good idea.","etypeId":3,"traits":[{"code":21,"dataId":7,"value":1.05}],"iconIndex":146,"name":"Potato on a String","note":"","params":[0,0,0,0,0,0,0,0],"price":100},
+{"id":12,"atypeId":7,"description":"","etypeId":3,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0},
+{"id":13,"atypeId":0,"description":"","etypeId":2,"traits":[{"code":22,"dataId":1,"value":0}],"iconIndex":0,"name":"","note":"","params":[0,0,0,0,0,0,0,0],"price":0}
 ]

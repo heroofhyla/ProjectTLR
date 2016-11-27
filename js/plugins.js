@@ -12,5 +12,6 @@ var $plugins =
 {"name":"ManyAccessories","status":true,"description":"Equip more than one accessory","parameters":{"accessoryCount":"3"}},
 {"name":"RenameAttackPerWeapon","status":true,"description":"Weapons can rename the Attack skill","parameters":{}},
 {"name":"CommonEventAtBattleStart","status":true,"description":"Calls a specified common event at the start of every battle","parameters":{"eventID":"17"}},
-{"name":"wasdmove","status":true,"description":"Enables movement with the WASD keys.","parameters":{}}
+{"name":"wasdmove","status":true,"description":"Enables movement with the WASD keys.","parameters":{}},
+{"name":"NoMPMoreStatusIcons","status":true,"description":"Removes MP bar, making room for more status icons","parameters":{}}
 ];
