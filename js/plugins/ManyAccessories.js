@@ -22,7 +22,6 @@
 			slots.push(i);
 		}
 		var accessorySlot =  $dataSystem.equipTypes.length - 1; 
-		console.log(accessorySlot);
 		for (var i = 1; i <= accessoryCount; i++){
 			slots.push(accessorySlot)
 		}
