@@ -13,5 +13,6 @@ var $plugins =
 {"name":"RenameAttackPerWeapon","status":true,"description":"Weapons can rename the Attack skill","parameters":{}},
 {"name":"CommonEventAtBattleStart","status":true,"description":"Calls common events during battle","parameters":{"battleStartEventID":"17","battleWinEventID":"20","battleEscapeEventID":"20","partyWipeEventID":"-1","turnStartEventID":"21","turnEndEventID":"-1","actionEndEventID":"-1"}},
 {"name":"wasdmove","status":true,"description":"Enables movement with the WASD keys.","parameters":{}},
-{"name":"NoMPMoreStatusIcons","status":true,"description":"Removes MP bar, making room for more status icons","parameters":{}}
+{"name":"NoMPMoreStatusIcons","status":true,"description":"Removes MP bar, making room for more status icons","parameters":{}},
+{"name":"TLRMenu","status":true,"description":"A very simple alternate menu. Designed for Trample Line Riddles.","parameters":{}}
 ];
