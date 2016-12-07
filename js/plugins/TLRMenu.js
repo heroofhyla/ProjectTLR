@@ -47,6 +47,6 @@ Window_MenuStatus.prototype.drawItemStatus = function(index) {
 };
 
 Window_MenuStatus.prototype.numVisibleRows = function() {
-    return 3;
+    return $gameParty.members().length;
 };
 })();
