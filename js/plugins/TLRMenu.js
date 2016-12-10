@@ -17,16 +17,15 @@ Window_MenuStatus.prototype.drawItemImage = function(index) {
 };
 
 Window_MenuStatus.prototype.maxEquipmentLines = function(){
-    return 5;
+    return 3;
 };
 
 Window_MenuStatus.prototype.drawEquipSlots = function(index) {
     var actor = $gameParty.members()[index];
     var rect = this.itemRect(index);
     var x = rect.x + 162;
-    var y = rect.y;
+    var y = rect.y + this.lineHeight() - 10;
     var width = rect.width - x - this.textPadding();
-    //this.drawTextEx("Equip slots!", x, y);
     var equips = actor.equips();
     var count = Math.min(equips.length, this.maxEquipmentLines());
     for (var i = 0; i < count; i++) {
@@ -41,7 +40,6 @@ Window_MenuStatus.prototype.drawItemStatus = function(index) {
     var y = rect.y + rect.height / 2 - this.lineHeight() * 1.5;
     var width = rect.width - x - this.textPadding();
     this.drawActorName(actor, rect.x + 1, rect.y + 1 + Window_Base._faceHeight - this.standardFontSize());
-    //this.drawActorSimpleStatus(actor, x, y, width);
     this.drawTextEx(actor.profile(), rect.x+1, rect.y + 1 + Window_Base._faceHeight);
     this.drawEquipSlots(index, x, y, width);
 };
