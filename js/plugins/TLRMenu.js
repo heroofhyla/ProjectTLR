@@ -37,7 +37,7 @@
     }
     
     WindowGroup_Status.prototype.selectLast = function() {
-        this.select($gameParty.menuActor().index() || 0);
+        this.select(0);
         this.refresh();
     }
     WindowGroup_Status.prototype.setFormationMode = function(formationMode) {
@@ -46,11 +46,14 @@
     
     
     WindowGroup_Status.prototype.processCancel = function(){
-        Window_Selectable.prototype.processCancel.call(this);
         for (i = 0; i < $gameParty.members().length; i++){
             this._statusWindow[i].deselect();
+            this._statusWindow[i].deactivate();
             this._statusWindow[i].refresh(false);
         }
+        this.deselect();
+        this.deactivate();
+        Window_Selectable.prototype.processCancel.call(this);
     }
     WindowGroup_Status.prototype.refresh = function(){
         if (this.index() >= 0){
