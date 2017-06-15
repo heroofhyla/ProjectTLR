@@ -14,5 +14,7 @@ var $plugins =
 {"name":"CommonEventAtBattleStart","status":true,"description":"Calls common events during battle","parameters":{"battleStartEventID":"17","battleWinEventID":"20","battleEscapeEventID":"20","partyWipeEventID":"-1","turnStartEventID":"21","turnEndEventID":"-1","actionEndEventID":"-1"}},
 {"name":"wasdmove","status":true,"description":"Enables movement with the WASD keys.","parameters":{}},
 {"name":"NoMPMoreStatusIcons","status":true,"description":"Removes MP bar, making room for more status icons","parameters":{}},
-{"name":"TLRMenu","status":true,"description":"A very simple alternate menu. Designed for Trample Line Riddles.","parameters":{}}
+{"name":"TLRMenu","status":true,"description":"A very simple alternate menu. Designed for Trample Line Riddles.","parameters":{}},
+{"name":"simplestats","status":true,"description":"Simplifies combat:\r\nLuck stat (0-100 value) is used for dodge stat and critical hit rate","parameters":{}},
+{"name":"StateUnsealsSkillType","status":false,"description":"Provides a tag that allows you to unseal particular skilltypes with a state","parameters":{}}
 ];

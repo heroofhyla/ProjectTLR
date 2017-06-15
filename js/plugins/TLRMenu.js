@@ -164,4 +164,42 @@
     Window_MenuStatus.prototype.maxItems = function() {
         return 1;
     };
+    
+    Window_EquipStatus.prototype.drawItem = function(x, y, paramId) {
+        this.drawParamName(x + this.textPadding(), y, paramId);
+        if (this._actor) {
+            this.drawCurrentParam(x + 140, y, paramId);
+        }
+        this.drawRightArrow(x + 188, y);
+        if (this._tempActor) {
+            this.drawNewParam(x + 222, y, paramId);
+        }
+    };
+    
+    Window_EquipStatus.prototype.drawParamName = function(x, y, paramId) {
+
+        if (this._actor){
+            this.changeTextColor(this.systemColor());
+            if (this._actor.currentClass().meta.atkstat && paramId == 2) {
+                this.drawText(this._actor.currentClass().meta.atkstat, x, y, 120);
+            }else{
+                this.drawText(TextManager.param(paramId), x, y, 120);
+            }
+        }
+    };
+    
+    Window_EquipStatus.prototype.refresh = function() {
+        this.contents.clear();
+        if (this._actor) {
+            this.drawActorName(this._actor, this.textPadding(), 0);
+            this.drawText(this._actor.currentClass().name,this.textPadding(),this.lineHeight(),120);
+            this.drawItem(0, 2 * this.lineHeight(), 2);
+            this.drawItem(0, 3 * this.lineHeight(), 0);
+            this.drawItem(0, 4 * this.lineHeight(), 7);
+        }
+    };
+    
+    Window_EquipStatus.prototype.numVisibleRows = function() {
+    return 5;
+};
 })();
