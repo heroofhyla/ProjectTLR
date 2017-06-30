@@ -15,6 +15,6 @@ var $plugins =
 {"name":"wasdmove","status":true,"description":"Enables movement with the WASD keys.","parameters":{}},
 {"name":"NoMPMoreStatusIcons","status":true,"description":"Removes MP bar, making room for more status icons","parameters":{}},
 {"name":"TLRMenu","status":true,"description":"A very simple alternate menu. Designed for Trample Line Riddles.","parameters":{}},
-{"name":"simplestats","status":true,"description":"Simplifies combat:\r\nLuck stat (0-100 value) is used for dodge stat and critical hit rate","parameters":{}},
+{"name":"simplestats","status":true,"description":"Simplifies combat","parameters":{}},
 {"name":"StateUnsealsSkillType","status":false,"description":"Provides a tag that allows you to unseal particular skilltypes with a state","parameters":{}}
 ];
